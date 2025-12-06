@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Vault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="vault-container">
+        <header class="app-header">
+            <h1>Thought Vault</h1>
+            <nav class="vault-nav">
+                <button id="nav-write" class="nav-item active">Write</button>
+                <button id="nav-read" class="nav-item">Read</button>
+            </nav>
+        </header>
+
+        <section id="panel-compose" class="panel">
+            <div class="input-group">
+                <label>Who said it?</label>
+                <input type="text" id="field-origin" placeholder="e.g. Marcus Aurelius">
+            </div>
+            
+            <div class="input-group">
+                <label>The Quote</label>
+                <textarea id="field-body" rows="4" placeholder="Enter wisdom here..."></textarea>
+            </div>
+
+            <button id="cmd-store" class="primary-btn">Save to Vault</button>
+        </section>
+
+        <section id="panel-library" class="panel hidden">
+            <div class="library-controls">
+                <h2>Collection</h2>
+                <button id="cmd-wipe" class="danger-link">Clear All</button>
+            </div>
+            
+            <div id="vault-grid" class="cards-wrapper">
+                </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
