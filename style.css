@@ -36,7 +36,6 @@ h1 {
     color: var(--accent);
 }
 
-/* Navigation */
 .vault-nav {
     display: flex;
     background: #2c2c2c;
@@ -59,14 +58,11 @@ h1 {
 
 .nav-item:hover { color: white; }
 
-/* The JS will toggle this styling logic manually, 
-   but we style the 'active' look here */
 .nav-item.active-tab {
     background-color: var(--accent);
     color: #121212;
 }
 
-/* Panels */
 .hidden { display: none; }
 
 .input-group { margin-bottom: 20px; }
@@ -110,7 +106,6 @@ input:focus, textarea:focus {
 .primary-btn:hover { background-color: var(--accent-hover); }
 .primary-btn:active { transform: scale(0.98); }
 
-/* Library / List View */
 .library-controls {
     display: flex;
     justify-content: space-between;
@@ -131,7 +126,6 @@ input:focus, textarea:focus {
     text-decoration: underline;
 }
 
-/* The Cards */
 .cards-wrapper {
     display: flex;
     flex-direction: column;
